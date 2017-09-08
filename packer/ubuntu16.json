@@ -1,8 +1,11 @@
 {
+	"variables" : {
+		"project_id": null
+	},
 	"builders": [
 		{
 			"type": "googlecompute",
-			"project_id": "bropro-178320",
+			"project_id": "{{user `project_id`}}",
 			"image_name": "reddit-base-{{timestamp}}",
 			"source_image": "ubuntu-1604-xenial-v20170815a",
 			"zone": "europe-west1-b",
